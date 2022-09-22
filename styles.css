@@ -1,0 +1,86 @@
+body{
+    background: hsl(217, 54%, 11%);
+}
+
+
+
+/*========= 
+    LAYOUT
+============ */
+.container{
+    background: hsl(216, 50%, 16%);
+    font-size: 18px;
+    padding: 20px;
+    width: 300px;
+    /* border: 2px solid   hsl(178, 100%, 50%); */
+    margin:200px auto 0px;
+    border-radius: 15px;
+}
+.cont-footer{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+/*========= 
+  INSIDE THE HEADER
+============ */
+.main-img{
+    border-radius: 10px;
+    background-size: cover;
+    width: 300px;
+    height: 310px;
+    background-image:url(images/image-equilibrium.jpg) ;
+}
+
+/*========= 
+    TYPOGRAPHY
+============ */
+.white{
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight:600px;
+    color: hsl(0, 0%, 100%);
+}
+.para{
+    font-size: 18px;
+    width: 300px;
+    color:  hsl(215, 51%, 70%);
+}
+.eth-info{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 2px solid hsl(215, 32%, 27%);
+}
+
+
+.price{
+    color:  hsl(178, 100%, 50%);
+}
+.time{
+    color:  hsl(215, 51%, 70%);
+}
+
+
+
+.pic{
+    border: 3px solid hsl(0, 0%, 100%);
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+}
+.con-foot-p{
+    color:  hsl(215, 51%, 70%);
+margin-left: 15px;
+}
+.con-foot-color{
+    color:  hsl(178, 100%, 50%);
+    
+}
+
+
+footer{
+    margin-top: 30px;
+}
