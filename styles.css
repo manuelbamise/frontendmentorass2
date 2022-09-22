@@ -1,3 +1,27 @@
+/* ========
+    TABLE OF CONTENT
+=========== */
+/* 
+
+1. GLOBAL SELECTOR
+2. LAYOUT
+3. Inside the header
+4.  Main typography
+    -- within eth info
+    -- within cont footer
+
+
+
+
+
+ */
+
+
+
+
+/* ========
+ 1.    GLOBAL SELECTOR
+=========== */
 body{
     background: hsl(217, 54%, 11%);
 }
@@ -5,7 +29,7 @@ body{
 
 
 /*========= 
-    LAYOUT
+ 2.   LAYOUT
 ============ */
 .container{
     background: hsl(216, 50%, 16%);
@@ -16,15 +40,18 @@ body{
     margin:200px auto 0px;
     border-radius: 15px;
 }
-.cont-footer{
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
+footer{
+    margin-top: 30px;
 }
 
 
+
+
+
+
+
 /*========= 
-  INSIDE THE HEADER
+ 3.  INSIDE THE HEADER
 ============ */
 .main-img{
     border-radius: 10px;
@@ -33,15 +60,51 @@ body{
     height: 310px;
     background-image:url(images/image-equilibrium.jpg) ;
 }
+.modal{
+    display: none;
+}
+.modal-img{
+    display: none;
+}
+
+.main-img:active .modal {
+    border-radius: 10px;
+    display: flex;
+    height: 100%;
+    border: 1px solid rgba(0, 255, 247, 0.705);
+    width: 100%;
+    background-color: rgba(0, 255, 247, 0.705);
+    display: block;
+}
+.main-img:active .modal > .modal-img{
+    background-image: url(images/icon-view.svg);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    margin: 100px auto 0px;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
 
 /*========= 
-    TYPOGRAPHY
+ 4. MAIN  TYPOGRAPHY
 ============ */
 .white{
     margin-top: 25px;
     font-size: 20px;
     font-weight:600px;
     color: hsl(0, 0%, 100%);
+}
+.white:active{
+    color: rgb(0, 255, 247);
 }
 .para{
     font-size: 18px;
@@ -54,33 +117,45 @@ body{
     padding-bottom: 20px;
     border-bottom: 2px solid hsl(215, 32%, 27%);
 }
+    /*========= 
+ --  WITHIN ETH INFO
+    ============ */
+    .price{
+        color:  hsl(178, 100%, 50%);
+    }
+    .time{
+        color:  hsl(215, 51%, 70%);
+    }
 
-
-.price{
-    color:  hsl(178, 100%, 50%);
+.cont-footer{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
 }
-.time{
-    color:  hsl(215, 51%, 70%);
-}
+    /*========= 
+  WITHIN CONT FOOTER
+    ============ */
+    .pic{
+        border: 3px solid hsl(0, 0%, 100%);
+        border-radius: 50px;
+        width: 30px;
+        height: 30px;
+    }
+    .con-foot-p{
+        color:  hsl(215, 51%, 70%);
+    margin-left: 15px;
+    }
+    .con-foot-color{
+        color: hsl(0, 0%, 100%);
+    }
+    .con-foot-color:active{
+        color:  hsl(178, 100%, 50%);
+        
+    }
 
 
 
-.pic{
-    border: 3px solid hsl(0, 0%, 100%);
-    border-radius: 50px;
-    width: 30px;
-    height: 30px;
-}
-.con-foot-p{
-    color:  hsl(215, 51%, 70%);
-margin-left: 15px;
-}
-.con-foot-color{
-    color:  hsl(178, 100%, 50%);
-    
-}
 
 
-footer{
-    margin-top: 30px;
-}
+
+
